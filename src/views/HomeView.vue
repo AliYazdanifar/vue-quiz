@@ -1,24 +1,17 @@
-<script>
-import HomeComponent from "../components/home/HomeComponent.vue";
-export default{
-  components:{HomeComponent}
-}
-</script>
+
 
 <template>
-  <main>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="card">
-          <div class="card-header"><h5 class="card-title">Welcome</h5></div>
-          <div class="card-body">
-            <h1 class="alert alert-success">test Alert</h1>
-
-            <HomeComponent/>
-          </div>
-          <div class="card-footer">next</div>
-        </div>
-      </div>
-    </div>
-  </main>
+  <CardView>
+    <template v-slot:cardBody>
+      <h1>سیستم کوئیز آنلاین</h1>
+      <p>با استفاده از این سسیستم میتوانید یک آزمون شبیه سازی را در اختیار داوطلبان قرار دهید تا به بهترین شکل بتوانند آماده ی پاسخگویی به تمام سوالات کنکور و یا دیگر آزمون ها شوند.</p>
+    </template>
+  </CardView>
 </template>
+
+<script>
+import CardView from "../components/CardComponent.vue";
+export default {
+  components: { CardView },
+};
+</script>

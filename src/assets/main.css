@@ -1,7 +1,12 @@
-body{
+#app{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+.rtl{
+    direction: rtl;
+    text-align: rtl;
 }
