@@ -1,3 +1,7 @@
+body {
+    font-family: Vazirmatn, sans-serif!important;
+    text-align: right;
+}
 #app{
     display: flex;
     flex-flow: row wrap;
@@ -8,5 +12,5 @@
 
 .rtl{
     direction: rtl;
-    text-align: rtl;
+    text-align: right;
 }
